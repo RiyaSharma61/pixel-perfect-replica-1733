@@ -16,7 +16,7 @@ export function RightRail() {
               key={i + idx}
               initials={i}
               size="sm"
-              accent={["primary", "violet", "cyan", "success"][idx % 4]}
+              accent={["primary", "violet", "cyan", "success"][idx % 4] ?? "primary"}
               className="h-7 w-7 border border-background text-[10px]"
             />
           ))}

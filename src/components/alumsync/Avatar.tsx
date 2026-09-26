@@ -32,7 +32,7 @@ export function Avatar({
     <div
       className={cn(
         "relative inline-flex shrink-0 items-center justify-center rounded-full bg-gradient-to-br font-semibold tracking-wide text-foreground transition-transform duration-300 hover:scale-105",
-        accentMap[accent] ?? accentMap.primary,
+        accentMap[accent] ?? accentMap["primary"],
         sizes[size],
         ring && "ring-2 ring-primary/40 ring-offset-2 ring-offset-background",
         className,

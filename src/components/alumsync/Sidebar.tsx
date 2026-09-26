@@ -60,7 +60,7 @@ export function Sidebar({
         </p>
         <ul className="space-y-0.5">
           {navItems.map((item) => {
-            const Icon = icons[item.icon];
+            const Icon = icons[item.icon] ?? Home;
             const isActive = active === item.label;
             return (
               <li key={item.label}>
